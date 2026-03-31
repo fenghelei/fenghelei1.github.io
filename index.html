@@ -510,7 +510,7 @@
         },
         re
     }
-    } else {
+    {
         this.phi += Math.PI / (axis.y == this.thresholdY ? 200 : 500);
         this.phi %= Math.PI;
     }
@@ -526,8 +526,7 @@
         this.z < this.FAR_LIMIT &&
         this.x < this.renderer.width * 1.5
     );
-    },
-    };
+   
     $(function () {
         RENDERER.init();
     });
